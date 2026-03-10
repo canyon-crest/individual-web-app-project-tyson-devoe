@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://canyon-crest.github.io/individual-web-app-project-tyson-devoe",
+  "homepage": "https://tyson-devoe.github.io/individual-web-app-project-tyson-devoe",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
