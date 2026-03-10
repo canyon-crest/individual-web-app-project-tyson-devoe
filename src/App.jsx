@@ -1,16 +1,20 @@
 import './App.css'
-import Message from './Message';
-import Card from './Card';
-
+import { HashRouter, Routes, Route } from 'react-router-dom'
+import Navbar from './Navbar'
+import Home from './pages/Home'
+import About from './pages/About'
+import Contact from './pages/Contact'
 
 function App() {
     return (
-        <div>
-            <Message greeting="Your Shopping Cart" name="Tyson" />
-            <Card name="Apple" description="A fresh red apple" />
-            <Card name="Banana" description="A ripe yellow banana" />
-            <Card name="Orange" description="A juicy orange" />
-        </div>
+        <HashRouter>
+            <Navbar />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+            </Routes>
+        </HashRouter>
     );
 }
 
