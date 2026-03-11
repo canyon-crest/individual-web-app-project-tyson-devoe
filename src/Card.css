@@ -1,6 +1,7 @@
 .myCard {
     padding: 1.5em;
     margin: 1em;
+    max-width: 400px;
     border: 1px solid #ccc;
     border-radius: 8px;
 }
