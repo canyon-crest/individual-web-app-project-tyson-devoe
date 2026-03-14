@@ -1,14 +1,13 @@
-import { Link } from 'react-router-dom'
 import './Navbar.css'
 
-function Navbar() {
+function Nav({ setPage }) {
     return (
         <nav className="navbar">
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/contact">Contact</Link>
+            <li onClick={() => setPage("home")}>Home</li>
+            <li onClick={() => setPage("about")}>About</li>
+            <li onClick={() => setPage("contact")}>Contact</li>
         </nav>
     )
 }
 
-export default Navbar
+export default Nav
