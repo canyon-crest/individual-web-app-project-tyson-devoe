@@ -1,13 +1,10 @@
-import Message from '../Message'
-import Card from '../Card'
-
 function Home() {
     return (
         <div>
-            <Message greeting="Your Shopping Cart" name="Tyson" />
-            <Card name="Apple" description="A fresh red apple" />
-            <Card name="Banana" description="A ripe yellow banana" />
-            <Card name="Orange" description="A juicy orange" />
+            <h1>Tyson Devoe</h1>
+            <p style={{ fontSize: '1.2rem', maxWidth: '600px', margin: '1rem auto' }}>
+                Welcome to my personal site.
+            </p>
         </div>
     )
 }
